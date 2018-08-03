@@ -35,6 +35,21 @@ public class PTra03_08 {
 		 *
 		 * ※ プログラムは何行書いても良いです
 		 */
+		switch(num) {
+		case 1:
+			int orange = 150;
+			System.out.println("購入後の所持金は" + (money - orange) + "円です。");
+			break;
+		case 2:
+			int apple = 160;
+			System.out.println("購入後の所持金は" + (money - apple) + "円です。");
+			break;
+		case 3:
+			int coffee = 200;
+			System.out.println("購入後の所持金は" + (money - coffee) + "円です。");
+			break;
+		}
+
 
 	}
 }
