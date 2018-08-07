@@ -1,4 +1,6 @@
 
+
+
 public class Practice15 {
 	public static void main(String[] args) {
 		double bmi = getBmi(1.7,60);
