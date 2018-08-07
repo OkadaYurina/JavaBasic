@@ -61,7 +61,6 @@ public class PTra10_05 {
 
 			rest -= car.run();
 			if(rest < 0) {
-				System.out.println("目的地に到達できませんでした");
 				break;
 
 			}
@@ -69,8 +68,9 @@ public class PTra10_05 {
 
 
 		if(car.gasoline == 0) {
-			System.out.println("目的地にまで" + count + "時間かかりました。");
+			System.out.println("目的地に到達できませんでした");
 		} else if(rest == 0) {
+			System.out.println("目的地にまで" + count + "時間かかりました。残りのガソリンは、" + restGasoline + "リットルです");
 			System.out.println("残りのガソリンは" + restGasoline + "リットルです");
 		}
 

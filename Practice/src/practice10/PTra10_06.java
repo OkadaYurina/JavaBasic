@@ -38,7 +38,9 @@ public class PTra10_06 {
 		int rest = distance;
 		int count = 0;
 		int restGasoline = car1.gasoline;
+
 		//繰り返しの中に書くと初期化されてしまうので最初に書く
+
 		while(car1.gasoline > 0) {
 			count ++;
 			restGasoline -= count;
