@@ -51,28 +51,51 @@ public class PTra10_05 {
 		 * ★ 目的地についた時点で「目的地にまでn時間かかりました。残りのガソリンは、xリットルです」を出力してください
 		 * ※n：runメソッドを実行した回数, xは残りのガソリンの数です
 		 */
-		int rest = distance;
+		
+		//2つ以上条件があるときは、無限ループを作って個別に抜け出す方法が良い。
+		int sum = 0;
 		int count = 0;
-		int restGasoline = car.gasoline;
-		//繰り返しの中に書くと初期化されてしまうので最初に書く
-		while(car.gasoline > 0) {
-			count ++;
-			restGasoline -= count;
+		while(true) {
+			int run = car.run();
+			count++;
 
-			rest -= car.run();
-			if(rest < 0) {
+			if (run == -1) {
+				System.out.println("目的地に到達できませんでした");
 				break;
-
 			}
+
+			sum += run;
+
+			if (sum >= distance ) {
+				System.out.println("目的地にまで" + count + "時間かかりました。残りのガソリンは、" + car.gasoline + "リットルです");
+				break;
+			}
+
+
 		}
 
 
-		if(car.gasoline == 0) {
-			System.out.println("目的地に到達できませんでした");
-		} else if(rest == 0) {
-			System.out.println("目的地にまで" + count + "時間かかりました。残りのガソリンは、" + restGasoline + "リットルです");
-			System.out.println("残りのガソリンは" + restGasoline + "リットルです");
-		}
+
+//		int rest = distance;
+//		int count = 0;
+//		int restGasoline = car.gasoline;
+//		//繰り返しの中に書くと初期化されてしまうので最初に書く
+//		while(car.gasoline >= 0) {
+//			count ++;
+//			restGasoline --;
+//			rest -= car.run();
+//			if(rest < 0) {
+//				break;
+//
+//			}
+//		}
+//
+//
+//		if(car.gasoline < 0) {
+//			System.out.println("目的地に到達できませんでした");
+//		} else {
+//			System.out.println("目的地にまで" + count + "時間かかりました。残りのガソリンは、" + restGasoline + "リットルです");
+//		}
 
 
 
