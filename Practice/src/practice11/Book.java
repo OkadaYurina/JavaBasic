@@ -30,6 +30,8 @@ public class Book {
 		this.pageSize = pageSize;
 		this.publication = publication;
 	}
+	
+
 
 	/** 本のタイトル */
 	String title;
@@ -49,6 +51,8 @@ public class Book {
 	/**
 	 * 本の情報を文字列で取得します
 	 */
+	
+	
 	String dispBookInfo() {
 
 		// 通貨形式で出力するときに必要
