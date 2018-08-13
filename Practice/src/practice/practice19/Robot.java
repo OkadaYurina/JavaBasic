@@ -1,9 +1,10 @@
 package practice.practice19;
 
 public class Robot {
-	String pilot;
 
-	String punch() {
+	public String pilot;
+
+	public void punch() {
 		System.out.println("パンチ！");
 	}
 

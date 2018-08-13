@@ -54,7 +54,6 @@ public class Character {
 
 	/**
 	 * 攻撃を行います
-	 * @return 相手に与えるダメージを返します
 	 */
 	public int attack() {
 		return this.power;
