@@ -1,6 +1,7 @@
 package practice14.common;
 
 public class JavaCourse implements Course{
+	
 	String PREFIX = "【Eラーニング】Java";
 
 	public String getCourseName() {
