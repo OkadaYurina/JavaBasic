@@ -35,7 +35,10 @@ public class Player {
 	}
 
 	public String toString() {
+		return this.position + "," +  this.name + "," + this.country + "," + this.team;
 
-	}
+		}
+
+
 
 }
