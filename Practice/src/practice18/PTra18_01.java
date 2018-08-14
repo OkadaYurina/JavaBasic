@@ -20,6 +20,12 @@ public class PTra18_01 {
             while (scanner.hasNext()) {
                 String line = scanner.nextLine();
                 // ★ 1行ごとにArrayListに格納してください
+                String[] ArrayList = line.split(" ");
+
+                for(String ary : ArrayList) {
+                	System.out.println(ary);
+                }
+
 
             }
         } catch (FileNotFoundException e) {
@@ -28,6 +34,7 @@ public class PTra18_01 {
 
 		// ★ ArrayListに格納された値を全て表示してください
 		// ※ できれば拡張for文を使いましょう
+
 
 	}
 }
