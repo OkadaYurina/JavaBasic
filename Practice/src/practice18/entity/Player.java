@@ -1,37 +1,37 @@
 package practice18.entity;
 
 public class Player {
-	String position;
-	String name;
-	String country;
-	String team;
+	private String position;
+	private String name;
+	private String country;
+	private String team;
 
-	public void getPosition(String position) {
-		this.position = position;
-	}
-	public String setPosition() {
+	public String getPosition() {
 		return this.position;
 	}
-
-	public void getName(String name) {
-		this.name = name;
+	public void setPosition(String position) {
+		this.position =  position;
 	}
-	public String setName() {
+
+	public String getName() {
 		return this.name;
 	}
-
-	public void getCountry(String country) {
-		this.country =country;
+	public void setName(String name) {
+		this.name = name;
 	}
-	public String setCountry() {
+
+	public String getCountry() {
 		return this.country;
 	}
-
-	public void getTeam(String team) {
-		this.team = team;
+	public void setCountry(String country) {
+		this.country = country;
 	}
-	public String setTeam() {
+
+	public String getTeam() {
 		return this.team;
+	}
+	public void setTeam(String team) {
+		this.team = team;
 	}
 
 	public String toString() {
